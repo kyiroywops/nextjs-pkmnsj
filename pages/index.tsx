@@ -1,10 +1,13 @@
 import type { NextPage } from 'next';
+import { Button } from '@nextui-org/react';
+import { Layout } from '../components/layouts';
 
 const HomePage: NextPage = () => {
   return (
-    <div>
-      <h1>hello</h1>
-      <button>hehe</button>
+    <div> 
+      <Layout>
+        <Button>Click me</Button>
+      </Layout>
     </div>
     )
 }
