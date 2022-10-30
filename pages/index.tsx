@@ -6,7 +6,7 @@ const HomePage: NextPage = () => {
   return (
     <div> 
       <Layout>
-        <Button>Click me</Button>
+        <Button>lol</Button>
       </Layout>
     </div>
     )
