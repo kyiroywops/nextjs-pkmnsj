@@ -5,7 +5,7 @@ import { Layout } from '../components/layouts';
 const HomePage: NextPage = () => {
   return (
     <div> 
-      <Layout>
+      <Layout title='Listado de pokemones'>
         <Button>lol</Button>
       </Layout>
     </div>
