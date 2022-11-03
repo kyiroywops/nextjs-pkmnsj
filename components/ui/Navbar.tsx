@@ -7,7 +7,7 @@ export const NavBar = () => {
             alignItems: 'center',
             justifyContent: 'start',
             padding: '0x 20px',
-            backgroundColor: 'red'
+            backgroundColor: 'black'
         }}>
         <span>test</span>
         </div>
