@@ -9,7 +9,7 @@ export const NavBar = () => {
             padding: '0x 20px',
             backgroundColor: 'red'
         }}>
-        <span>kk</span>
+        <span>test</span>
         </div>
     )
 };
