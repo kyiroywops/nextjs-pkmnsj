@@ -7,7 +7,7 @@ const HomePage: NextPage = () => {
     <div> 
       <Layout title='Listado de pokemones' description='Listado de pokemones'>
 
-        <Button >lols</Button>
+        <Button >lolskkk</Button>
         
       </Layout>
     </div>
