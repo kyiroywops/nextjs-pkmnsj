@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { ReactNode, FunctionComponent } from 'react';
 
+import {Navbar}  from '../ui';
 
 interface BaseLayoutProps {
     children?: ReactNode;
@@ -19,8 +20,11 @@ const Layout: FunctionComponent<BaseLayoutProps> = ({ children, title }) => {
                 <meta name="description" content="Pokemon App" />
                 <meta name="keywords" content="Pokemon, App" />
             </Head>```
-            {/* Navbar */}
-            <main>
+            <Navbar />
+            <main style={{
+                padding: '0px 20px',
+                
+            }}>
                 { children }
             </main>
         </>
