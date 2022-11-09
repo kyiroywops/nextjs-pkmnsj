@@ -1,4 +1,4 @@
-import {useTheme} from '@nextui-org/react';
+import {Text, useTheme} from '@nextui-org/react';
 
 export const NavBar = () => {
 
@@ -16,6 +16,7 @@ export const NavBar = () => {
 
         }}>
         <span>test</span>
+        <Text></Text>
         </div>
     )
 };
