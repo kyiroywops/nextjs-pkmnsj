@@ -1,4 +1,9 @@
+import {useTheme} from '@nextui-org/react';
+
 export const NavBar = () => {
+
+    const {theme} = useTheme();
+    console.log(theme);
     return (
         <div style={{
             display: 'flex',
@@ -7,7 +12,8 @@ export const NavBar = () => {
             alignItems: 'center',
             justifyContent: 'start',
             padding: '0x 20px',
-            backgroundColor: 'black'
+            backgroundColor: theme?.colors.gray900.value
+
         }}>
         <span>test</span>
         </div>
