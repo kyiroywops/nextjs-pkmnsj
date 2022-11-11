@@ -1,4 +1,4 @@
-import {Text, useTheme} from '@nextui-org/react';
+import {Text, useTheme, Spacer} from '@nextui-org/react';
 
 export const NavBar = () => {
 
@@ -15,8 +15,11 @@ export const NavBar = () => {
             backgroundColor: theme?.colors.gray900.value
 
         }}>
-        <span>test</span>
-        <Text></Text>
+        <Text color='white' h2>P</Text>
+        <Text color='white' h3>okemon</Text>
+
+        <Spacer css={{flex: 1}} />
+        <Text color='white' h2>Favoritos</Text>
         </div>
     )
 };
