@@ -1,12 +1,16 @@
 import type { NextPage, GetStaticProps } from 'next';
 import { pokeApi } from '../api';
 import { Layout } from '../components/layouts';
-import { PokemonListResponse } from '../interfaces';
+import { PokemonListResponse, SmallPokemon } from '../interfaces';
+
+interface Props {
+  pokemons: SmallPokemon[];
+}
 
 
-const HomePage: NextPage = (props) => {
+const HomePage: NextPage<Props> = (pokemons) => {
 
-  console.log(props);
+  console.log(pokemons);
 
   return (
     <div> 
