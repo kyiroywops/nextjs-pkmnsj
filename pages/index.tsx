@@ -18,13 +18,6 @@ const HomePage: NextPage<Props> = (pokemons) => {
 
         <ul>
           <li>Pokemon</li>
-          <li>Pokemon</li>
-          <li>Pokemon</li>
-          <li>Pokemon</li>
-          <li>Pokemon</li>
-          <li>Pokemon</li>
-          <li>Pokemon</li>
-          <li>Pokemon</li>
         </ul>
 
         
