@@ -10,25 +10,24 @@ interface Props {
 
 const HomePage: NextPage<Props> = (pokemons) => {
 
-  console.log(pokemons);
-  const pokemons = data.results.map((poke, i) => ({
-    ...poke,
-    id: i + 1,
-    img: `https://raw.githubusercontent.com/PokeAPI/sprites/pokemon/other/dream-world/${i+1}.svg`
-  }
-  )
-
-
-
-  )
 
   return (
     <div> 
       <Layout title='Listado de pokemones'>
 
         <ul>
-          <li>Pokemon</li>
-        </ul>
+        {
+          pokemons.map( ({id, name}) => {
+             <li key= { pokemon.id}>
+               #{id} - Nombre {name}
+
+
+            </li>
+        }
+        )
+        }
+
+         </ul>
 
         
       </Layout>
@@ -43,7 +42,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   return {
     props: {
-      pokemons
+      pokemons:data.results
 
     }
   }
