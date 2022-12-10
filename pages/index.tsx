@@ -11,6 +11,16 @@ interface Props {
 const HomePage: NextPage<Props> = (pokemons) => {
 
   console.log(pokemons);
+  const pokemons = data.results.map((poke, i) => ({
+    ...poke,
+    id: i + 1,
+    img: `https://raw.githubusercontent.com/PokeAPI/sprites/pokemon/other/dream-world/${i+1}.svg`
+  }
+  )
+
+
+
+  )
 
   return (
     <div> 
@@ -33,7 +43,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   return {
     props: {
-      pokemons: data.results
+      pokemons
 
     }
   }
